@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 2 - DOM</title>
+        <script src="./Ejer02_SolB.js"></script>
+    </head>
+    <body>
+        <ul>
+            <li>
+                <a class="link" href="http://www.adobe.com">Adobe</a>
+            </li>
+            <li>
+                <a class="link" href="http://www.apple.com">Apple</a>
+            </li>
+            <li>
+                <button type="submit" class="backgroundChanger">Boton1</button>
+                <button type="submit" class="backgroundChanger">Boton2</button>
+                <button type="submit" class="backgroundChanger">Boton3</button>
+            </li>
+        </ul>
+        <input id="editor" type="text" name="editor" value="">
+        <br>
+        <hr>
+        <button id="collapse" type="submit" onmousedown="showOrHide()">Click to show</button>
+        <p id="lorem" style="display: none">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Nullam congue, lorem non sodales laoreet, ex lectus congue nisi, et congue mauris lacus ac diam. Aliquam vitae maximus erat. 
+            Phasellus vitae nisl lorem. Duis vestibulum vehicula ligula, id pellentesque augue pharetra sit amet. Aliquam nec massa metus. 
+            Vestibulum at neque ut arcu tempor aliquam vitae sed erat. Cras libero neque, laoreet sed nulla non, finibus sodales dolor. 
+            Ut ornare eros eget sem consectetur consectetur. Pellentesque eu interdum urna. Duis consectetur blandit velit vel venenatis. 
+            Aenean a pretium nisi. Curabitur efficitur non ex id vestibulum. Etiam tempor quis libero blandit vestibulum. 
+            Sed nunc ligula, viverra non vehicula non, laoreet vitae felis. 
+        </p>
+        <script type="text/javascript">
+            var links = document.getElementsByClassName("link");
+
+for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener("onmouseover", function () { showLink(links[i]); });
+}
+
+            </script>
+    </body>
+</html>

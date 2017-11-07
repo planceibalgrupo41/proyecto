@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function showLink(anchor) {
+                console.log(anchor.getAttribute('href'));
+               var editor = document.getElementById("editor");
+               editor.innerHTML = anchor.getAttribute('href');
+            }
+        </script>
+    </head>
+    <body>
+        <ul>
+            <li>
+                <a href="http://www.adobe.com" onmouseover="showLink(this)">Adobe</a>
+            </li>
+            <li>
+                <a href="http://www.apple.com" onmouseover="showLink(this)">Apple</a>
+            </li>
+            <p id="editor"></p>
+        </ul>
+    </body>
+</html>
